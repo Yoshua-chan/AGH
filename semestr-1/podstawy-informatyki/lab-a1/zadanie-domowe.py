@@ -15,7 +15,7 @@
 #4. Narysuj wykres funkcji w podanym przez użytkownika zakresie za pomocą
 # linii ciągłej. wykres powinien mieć około 100 punktów (4 pkt)
 
-#5. Opisz osie wykresu jako ‘x’ oraz ‘f(x)’ (1 pkt
+#5. Opisz osie wykresu jako ‘x’ oraz ‘f(x)’ (1 pkt)
 
 
 import math as math
@@ -56,13 +56,20 @@ d = float(input('Wprowadź d:'))
 x_range_low  = float(input('Podaj dolny zakres:'))
 x_range_high = float(input('Podaj górny zakres:'))
 
+if x_range_low >= x_range_high:
+    print("błąd: górny zakres mniejszy lub równy od dolnego")
+    exit(1)
+    
+
 args = np.arange(x_range_low, x_range_high, 0.1)
 vals = getvalue(a, b, c, d, args)
 
+print("\nWzór funkcji:")
 print(geteq(a, b, c, d))
 
 plt.xlabel("x")
 plt.ylabel("f(x)")
+
 plt.title("$f(x) = " + geteq(a, b, c, d) + "$")  # przekaż tytuł jako LaTeX
 
 plt.axhline(y=0, color='black', linestyle='--') # rysuje y=0 przerywaną linią
