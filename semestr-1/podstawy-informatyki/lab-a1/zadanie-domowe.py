@@ -73,5 +73,6 @@ plt.ylabel("f(x)")
 plt.title("$f(x) = " + geteq(a, b, c, d) + "$")  # przekaż tytuł jako LaTeX
 
 plt.axhline(y=0, color='black', linestyle='--') # rysuje y=0 przerywaną linią
+plt.grid(True)
 plt.plot(args, vals) # rysuje wykres wartości od argumentów
 plt.show()
