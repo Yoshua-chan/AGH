@@ -1,29 +1,79 @@
 import numpy as np
-from funkcje import *
 
-#TODO: Napisać zestaw funkcji pozwalające na obliczenie: objętości, masy, pola powierzchni: 
-#TODO: a) kuli (10%)* 
-#TODO: b) czworościanu foremnego (10%)* 
-#TODO: c) ostrosłupa prostego o podstawie prostokątnej (10%)* 
-#TODO: d) stożka (10%)* 
-#TODO: e) walca (10%)* 
-#TODO: f) elipsoidy (20%)*,** * jeżeli funkcje obliczające objętości, masy, pola powierzchni działają poprawnie 
+def sphere_volume(radius): 
+    return 4/3 * np.pi * (radius ** 3)
 
-# Program powinien wyświetlając wszystkie wymienione nazwy brył które zostały zaimplementowane, 
-# następnie poprosić użytkownika o dokonanie wyboru jednej z nich. Po dokonaniu wyboru program 
-# powinien wyświetlić listę właściwości, które wylicza (objętość, masa, pole powierzchni). Pod 
-# dokonaniu wyboru użytkownik podaje potrzebne parametry (o które zostanie poproszony) a następnie 
-# wyświetla wynik wybranej operacji (objętości, masy, pola powierzchni) dla wybranej bryły
+def sphere_area(radius):
+    return 4 * np.pi * (radius ** 2)
 
-# W całym programie w wyświetlanych komunikatach należy stosować jednostki układu SI 
 
-# Program powinien być zapętlony, tzn. po wyliczeniu zadanej wartości dla zadanej bryły powinien pytać 
-# użytkownika czy chce kontynuować i wykonać inne obliczenia, podobnie jak w zadaniu 6.
 
-# Program powinien posiadać zabezpieczenie przed podaniem wartości niedozwolonych (np. liczb 
-# ujemnych lub łańcuchów znaków i innych koniecznych warunków jeśli występują) i informować o tym 
-# fakcie użytkownika w poprzez wyświetlenie odpowiedniego komunikatu, jednocześnie kontynuując 
-# działanie i prosząc o podanie poprawnej wartości
+def tetrahedron_volume(edge):
+    return (edge ** 3)/(6 * np.sqrt(2))
+
+def tetrahedron_area(edge):
+    return np.sqrt(3) * (edge ** 2)
+
+
+
+def pyramid_volume(edgeA, edgeB, height):
+    return 1/3 * edgeA * edgeB * height;
+    
+def pyramid_area(edgeA, edgeB, height):
+    Pp = edgeA * edgeB
+
+    #Ściana przy edgeA
+    height_A = np.sqrt((1/2 * edgeB) ** 2 + height ** 2)
+    Pa = (edgeA * height_A)/2
+
+    #Ściana przy edgeB
+    height_B = np.sqrt((1/2 * edgeA) ** 2 + height ** 2)
+    Pb = (edgeB * height_B)/2
+
+    return Pp + 2 * Pa + 2 * Pb
+
+
+
+def cone_volume(radius, height):
+    Pp = np.pi * (radius ** 2)
+    return 1/3 * Pp * height
+
+def cone_area(radius, height):
+    Pp = np.pi * (radius ** 2)
+    l = np.sqrt((height ** 2) + (radius ** 2))
+
+
+
+def cylinder_volume(radius, height):
+    return np.pi * (radius ** 2) * height
+
+def cylinder_area(radius, height):
+    return 2 * np.pi * radius * (radius + height)
+
+
+def elipsoid_area(a, b):
+    if b > a:
+        temp = a
+        a = b
+        b = temp
+    epsilon = np.sqrt(1 - (b ** 2 / a ** 2))
+    P = 2 * np.pi * b * (b + a/epsilon * np.arcsin(epsilon))
+    return P
+
+def display_stuff(name, area, volume, density):
+    print("\n" + name + ":")
+    if area != 0:
+        print("Pole powierchni:", area, "[m^2]")
+    if volume != 0:
+        print("Objętość:", volume, "[m^2]")
+    if density != 0:
+        print("Gęstość:", density, "[kg/m^3]")
+    if density != 0 and volume != 0:
+        print("Masa: ", (density * volume), "[kg]")
+    print()
+
+
+
 
 
 yes = 'Y';
