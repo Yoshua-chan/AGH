@@ -5,14 +5,14 @@ from scipy.io.wavfile import write
 import scipy.signal as signal
 import matplotlib.pyplot as plt
 
-def TranformataFouriera(t,y): 
+def fouriers_transform(t,y): 
     N = len(t) 
     dt = t[1] - t[0] 
     yf = 2.0 / N * np.abs(fft(y)[0:N // 2]) 
     xf = np.fft.fftfreq(N, d=dt)[0:N // 2] 
     return xf, yf
 
-while True:
+while True: 
     while True: # Sampling rate
         try:
             sampling = int(input("Podaj częstotliwość próbkowania [Hz]:"))
@@ -46,8 +46,6 @@ while True:
         except ValueError:
             print("Niepoprawna wartość, spróbuj ponownie")
 
-
-
     while True:
         try:
             print("[1] Sine")
@@ -66,10 +64,10 @@ while True:
 
     while True: # Frequency
         try:
-            frequency = float(input("Podaj częstotliwość sygnału [Hz]:"))
-
-            if frequency <= 0:
-                raise ValueError
+            if wav_num != "5":
+                frequency = float(input("Podaj częstotliwość sygnału [Hz]:"))
+                if frequency <= 0:
+                    raise ValueError
 
             break
         except ValueError:
@@ -91,14 +89,19 @@ while True:
 
     if wav_num == "1":
         waveform_data = generator.sine(amplitude, frequency)
+        waveform_title = "Sine: A = " + str(amplitude) + ", f = " + str(frequency)
     elif wav_num == "2":
         waveform_data = generator.square(amplitude, frequency)
+        waveform_title = "Square: A = " + str(amplitude) + ", f = " + str(frequency)
     elif wav_num == "3":
         waveform_data = generator.sawtooth(amplitude, frequency)
+        waveform_title = "Sawtooth: A = " + str(amplitude) + ", f = " + str(frequency)
     elif wav_num == "4":
         waveform_data = generator.triangle(amplitude, frequency)
+        waveform_title = "Triangle: A = " + str(amplitude) + ", f = " + str(frequency)
     elif wav_num == "5":
         waveform_data = generator.WhiteNoise(amplitude)
+        waveform_title = "White noise: A = " + str(amplitude)
 
     
     choice = input("Czy chcesz zapisać przegieg do pliku wav? [Y/n]:")
@@ -114,13 +117,24 @@ while True:
         dataframe = pd.DataFrame(csv_data)
         dataframe.to_csv(filename, index=False, sep="\t")
 
-    plt.plot(generator.time, waveform_data)
-    plt.xlabel("Time")
-    plt.ylabel("Value")
-    plt.xlim(0, x_limit)
+    fourier_freq, fourier_value = fouriers_transform(generator.time, waveform_data)
+
+    fig, (waveform, fourier) = plt.subplots(2, 1)
+    fig.subplots_adjust(hspace=0.8)
+
+    waveform.set_xlabel("time (s)")
+    waveform.set_ylabel("value")
+    waveform.set_xlim(0, x_limit)
+    waveform.title.set_text(waveform_title)
+    waveform.plot(generator.time, waveform_data)
+
+    fourier.set_xlabel("frequency (Hz)")
+    fourier.set_ylabel("amplitude")
+    fourier.title.set_text("Fourier's transform")
+    fourier.plot(fourier_freq, fourier_value)
+    
+
     plt.show()
-
-
 
     choice = input("Czy chcesz skorzystać z programu jeszcze raz? [Y/n]:")
     if choice == "n" or choice == "N":

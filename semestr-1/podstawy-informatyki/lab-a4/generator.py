@@ -1,6 +1,7 @@
 import numpy as np
 import scipy.signal as signal
 import random as random
+from scipy.fft import fft
 
 
 class Function_generator:
@@ -27,5 +28,5 @@ class Function_generator:
         return signal.t
     
     def WhiteNoise(self, amplitude):
-        return np.random.rand(len(self.time)) - 0.5 * 2 * amplitude
+        return (np.random.rand(len(self.time)) - 0.5) * 2 * amplitude
 
