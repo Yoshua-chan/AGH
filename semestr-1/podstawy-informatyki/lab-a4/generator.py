@@ -25,7 +25,6 @@ class Function_generator:
     
     def triangle(self, amplitude, frequency):
         return signal.sawtooth(2 * np.pi * frequency * self.time, 0.5) * amplitude
-        return signal.t
     
     def WhiteNoise(self, amplitude):
         return (np.random.rand(len(self.time)) - 0.5) * 2 * amplitude
