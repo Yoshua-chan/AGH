@@ -26,7 +26,7 @@ while True:
 
     while True: # Timespan
         try:
-            timespan = float(input("Podaj czas trwania sygnału [s]:"))
+            timespan = int(input("Podaj czas trwania sygnału [s]:"))
 
             if timespan <= 0:
                 raise ValueError
