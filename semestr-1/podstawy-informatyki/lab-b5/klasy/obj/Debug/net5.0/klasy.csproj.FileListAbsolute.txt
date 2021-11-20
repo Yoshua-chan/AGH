@@ -1,0 +1,16 @@
+C:\Users\student\Documents\Kacper Filipek\b5\klasy\bin\Debug\net5.0\klasy.exe
+C:\Users\student\Documents\Kacper Filipek\b5\klasy\bin\Debug\net5.0\klasy.deps.json
+C:\Users\student\Documents\Kacper Filipek\b5\klasy\bin\Debug\net5.0\klasy.runtimeconfig.json
+C:\Users\student\Documents\Kacper Filipek\b5\klasy\bin\Debug\net5.0\klasy.runtimeconfig.dev.json
+C:\Users\student\Documents\Kacper Filipek\b5\klasy\bin\Debug\net5.0\klasy.dll
+C:\Users\student\Documents\Kacper Filipek\b5\klasy\bin\Debug\net5.0\ref\klasy.dll
+C:\Users\student\Documents\Kacper Filipek\b5\klasy\bin\Debug\net5.0\klasy.pdb
+C:\Users\student\Documents\Kacper Filipek\b5\klasy\obj\Debug\net5.0\klasy.csproj.AssemblyReference.cache
+C:\Users\student\Documents\Kacper Filipek\b5\klasy\obj\Debug\net5.0\klasy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\student\Documents\Kacper Filipek\b5\klasy\obj\Debug\net5.0\klasy.AssemblyInfoInputs.cache
+C:\Users\student\Documents\Kacper Filipek\b5\klasy\obj\Debug\net5.0\klasy.AssemblyInfo.cs
+C:\Users\student\Documents\Kacper Filipek\b5\klasy\obj\Debug\net5.0\klasy.csproj.CoreCompileInputs.cache
+C:\Users\student\Documents\Kacper Filipek\b5\klasy\obj\Debug\net5.0\klasy.dll
+C:\Users\student\Documents\Kacper Filipek\b5\klasy\obj\Debug\net5.0\ref\klasy.dll
+C:\Users\student\Documents\Kacper Filipek\b5\klasy\obj\Debug\net5.0\klasy.pdb
+C:\Users\student\Documents\Kacper Filipek\b5\klasy\obj\Debug\net5.0\klasy.genruntimeconfig.cache
