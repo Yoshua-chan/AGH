@@ -18,6 +18,7 @@ namespace Chess
             international
         }
 
+
         public ChessMatch(ChessPlayer player1, ChessPlayer player2)
         {
             this.player1 = player1;
