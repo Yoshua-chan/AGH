@@ -1,0 +1,16 @@
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b6/bin/Debug/net5.0/lab-b6
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b6/bin/Debug/net5.0/lab-b6.deps.json
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b6/bin/Debug/net5.0/lab-b6.runtimeconfig.json
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b6/bin/Debug/net5.0/lab-b6.runtimeconfig.dev.json
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b6/bin/Debug/net5.0/lab-b6.dll
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b6/bin/Debug/net5.0/ref/lab-b6.dll
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b6/bin/Debug/net5.0/lab-b6.pdb
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b6/obj/Debug/net5.0/lab-b6.csprojAssemblyReference.cache
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b6/obj/Debug/net5.0/lab-b6.GeneratedMSBuildEditorConfig.editorconfig
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b6/obj/Debug/net5.0/lab-b6.AssemblyInfoInputs.cache
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b6/obj/Debug/net5.0/lab-b6.AssemblyInfo.cs
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b6/obj/Debug/net5.0/lab-b6.csproj.CoreCompileInputs.cache
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b6/obj/Debug/net5.0/lab-b6.dll
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b6/obj/Debug/net5.0/ref/lab-b6.dll
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b6/obj/Debug/net5.0/lab-b6.pdb
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b6/obj/Debug/net5.0/lab-b6.genruntimeconfig.cache

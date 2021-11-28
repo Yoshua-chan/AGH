@@ -32,5 +32,12 @@ namespace Chess
             else
                 return player2.Name;
         }
+        public void printAll() {
+            Console.WriteLine("Player 1:");
+            Console.WriteLine("Name: {0}\nAge: {1}\nSkill: {2}\n", player1.Name, player1.Age, player1.Skill);
+
+            Console.WriteLine("Player 2:");
+            Console.WriteLine("Name: {0}\nAge: {1}\nSkill: {2}\n", player2.Name, player2.Age, player2.Skill);
+        }
     }
 }

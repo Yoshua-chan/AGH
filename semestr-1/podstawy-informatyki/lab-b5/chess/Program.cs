@@ -11,8 +11,10 @@ namespace Chess
 
             ChessMatch match = new ChessMatch(player1, player2);    
 
+            match.printAll();
 
-            Console.WriteLine(match.GetWinner());
+            Console.WriteLine("The winner is {0}", match.GetWinner());
+            
         }
     }
 }

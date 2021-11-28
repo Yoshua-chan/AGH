@@ -21,8 +21,7 @@ namespace hello
                 else
                     return middle;
             }
-            else
-                return -1;
+            else return -1;
         }
         static double Solution(double a, double b, double c) // Zadanie H
         {
@@ -35,14 +34,12 @@ namespace hello
 
         static int SumDivisibleBy7(int current_sum, int left, int right) { // Zadanie I
             if(left <= right) {
-                if(left % 7 == 0) {
+                if(left % 7 == 0)
                     return current_sum + left + SumDivisibleBy7(current_sum, left + 1, right);
-                }
                 else
                     return current_sum + SumDivisibleBy7(current_sum, left + 1, right);
-            } else {
+            } else
                 return 0;
-            }
         }
     }
 
