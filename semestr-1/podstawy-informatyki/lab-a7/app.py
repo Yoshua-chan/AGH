@@ -1,3 +1,4 @@
+import sys
 from PyQt5.QtCore import QFile, QLine
 from PyQt5.QtWidgets import QAction, QMenuBar, QWidget, QLineEdit, QPushButton, \
     QRadioButton, QSpinBox, QDoubleSpinBox, QApplication, \
@@ -8,13 +9,14 @@ class App(QWidget):
     def __init__(self):
         super().__init__()
 
-        self.waveform = "sine"
+        self.waveform = "sine" # temporary
+
         ########## WINDOW PROPERTIES ############
         self.title = "Function generator"
         self.setWindowTitle(self.title)
 
         self.height = 500
-        self.width = 500 * 1.68
+        self.width = int(500 * 1.68 // 1)
         self.setGeometry(400, 250, self.width, self.height)
 
         ############# ACTIONS  ##################
@@ -51,3 +53,9 @@ class App(QWidget):
 
     def show_about(self):
         pass
+
+class GraphWidget(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("dupa")
+        self.show()
