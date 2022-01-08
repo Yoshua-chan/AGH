@@ -1,0 +1,16 @@
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b9/obj/Debug/net5.0/GradeSheet.csprojAssemblyReference.cache
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b9/obj/Debug/net5.0/GradeSheet.GeneratedMSBuildEditorConfig.editorconfig
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b9/obj/Debug/net5.0/GradeSheet.AssemblyInfoInputs.cache
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b9/obj/Debug/net5.0/GradeSheet.AssemblyInfo.cs
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b9/obj/Debug/net5.0/GradeSheet.csproj.CoreCompileInputs.cache
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b9/bin/Debug/net5.0/GradeSheet
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b9/bin/Debug/net5.0/GradeSheet.deps.json
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b9/bin/Debug/net5.0/GradeSheet.runtimeconfig.json
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b9/bin/Debug/net5.0/GradeSheet.runtimeconfig.dev.json
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b9/bin/Debug/net5.0/GradeSheet.dll
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b9/bin/Debug/net5.0/ref/GradeSheet.dll
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b9/bin/Debug/net5.0/GradeSheet.pdb
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b9/obj/Debug/net5.0/GradeSheet.dll
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b9/obj/Debug/net5.0/ref/GradeSheet.dll
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b9/obj/Debug/net5.0/GradeSheet.pdb
+/home/kacper/AGH/semestr-1/podstawy-informatyki/lab-b9/obj/Debug/net5.0/GradeSheet.genruntimeconfig.cache
