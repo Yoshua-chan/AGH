@@ -10,9 +10,10 @@ namespace game
     {
         public Damage damage;
 
-        public Weapon(Damage damage)
+        public Weapon(Damage damage, string name)
         {
             this.damage = damage;
+            this.Name = name;
         }
     }
 }

@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace game
 {
-    internal class Position
+    public class Position
     {
-        int canvas;
-        int x;
-        int y;
+        public int room;
+        public int x;
+        public int y;
+        public Position(int room, int x, int y)
+        {
+            this.room = room;
+            this.x = x;
+            this.y = y;
+        }
     }
 }

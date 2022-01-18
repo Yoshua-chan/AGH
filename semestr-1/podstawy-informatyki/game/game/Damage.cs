@@ -17,8 +17,15 @@ namespace game
         public Damage(Damage damage) // copying constructor
         {
             Damage newDamage = new Damage();
-            foreach (KeyValuePair<string, double> kvp in damage.damage) {
-                this.damage.Add(kvp.Key, kvp.Value);
+            try
+            {
+                foreach (KeyValuePair<string, double> kvp in damage.damage)
+                {
+                    this.damage[kvp.Key] = kvp.Value;
+                }
+            } catch (Exception ex)
+            {
+                
             }
         }
     }
