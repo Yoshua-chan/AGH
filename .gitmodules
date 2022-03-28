@@ -1,0 +1,3 @@
+[submodule "semestr-2/jp/connect-four"]
+	path = semestr-2/jp/connect-four
+	url = git@github.com:Yoshua-chan/connect-four.git
