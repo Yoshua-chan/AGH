@@ -1,1 +1,3 @@
+# AGH
+
 rzeczy na uczelnie
