@@ -1,0 +1,25 @@
+\section*{Wielomiany Czebyszewa}
+Wzor rekurencyjny:
+
+\begin{itemize}
+    \item $T_0(x) = 1$
+    \item $T_1(x) = x$
+    \item $T_n(x) = 2x\cdot T_{n-1}(x)-T_{n-2}(x)$, dla n $\ge$ 2 
+\end{itemize}
+
+Wielomiany Czebyszewa mają $n$-tego stopnia mają na przedziale $n$
+równo rozmieszczonych miejsc zerowych określonych wzorem:
+\begin{equation*}
+    x_k = \cos{\left(\frac{\pi\left(k-0.5\right)}{n}\right)}
+\end{equation*}
+
+Oraz $n + 1$ ekstremów w punktach określonych wzorem
+\begin{equation*}
+    x_m = \cos{\left(\frac{\pi\cdot m}{n}\right)}
+\end{equation*}
+
+dla
+
+$k = 1, 2\ \hdots\ n$
+
+$m = 0, 1\ \hdots\ n$
