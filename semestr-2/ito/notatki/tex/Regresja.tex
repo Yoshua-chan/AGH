@@ -87,3 +87,38 @@ według równania
 \begin{equation*}
 a = ( X^T \cdot X)^{-1} \cdot X^T \cdot y
 \end{equation*}
+
+\subsection*{Regresja nieliniowa wielowymiarowa}
+
+\begin{equation*}
+    a_0 \cdot g_0(x_n) + a_1 \cdot g_1(x_n) + a_1 \cdot g_1(x_n) + \hdots + a_K \cdot g_K(x_n) = y_n - e_n 
+\end{equation*}
+
+\begin{equation*}
+    n = 1, 2, 3 \hdots N
+\end{equation*}
+
+\begin{equation*}
+    \begin{bmatrix}
+            g_0(x_1) & g_1(x_1) & g_2(x_1) & \hdots & g_K(x_1) \\
+            g_0(x_2) & g_1(x_2) & g_2(x_2) & \hdots & g_K(x_2) \\
+            g_0(x_3) & g_1(x_3) & g_2(x_3) & \hdots & g_K(x_3) \\
+            \vdots & \vdots & \vdots & \ddots & \vdots \\ 
+            g_0(x_N) & g_1(x_N) & g_2(x_N) & \hdots & g_K(x_N) \\
+    \end{bmatrix}
+\cdot \begin{bmatrix}
+    a_0 \\ a_1 \\ a_2 \\ \vdots \\ a_K
+\end{bmatrix}
+ = \begin{bmatrix}
+    y_1 \\ y_2 \\ y_3 \\ \vdots \\ y_N
+\end{bmatrix} - \begin{bmatrix}
+    e_1\\e_2\\e_3\\\vdots\\e_N
+\end{bmatrix}
+\end{equation*}
+
+Aby obliczyć macierz $a$, należy zastosować macierze pseudolosową
+według równania
+
+\begin{equation*}
+a = ( X^T \cdot X)^{-1} \cdot X^T \cdot y
+\end{equation*}
