@@ -1,0 +1,23 @@
+\section*{Przydatne funkcje}
+
+\begin{itemize}
+    \item \texttt{semilog(X, Y)} - rysuje wykres w skali logarytmicznej
+    \item \texttt{d = trapz(X,Y)} - całka oznaczona metodą trapezów
+    \item \texttt{x = conj(z)} - sprzężenie zespolone liczby \texttt{z}
+    \item \texttt{w = conv(u, v)} - mnożenie wielomianów \texttt{u} i \texttt{v}
+    \item \texttt{[q, r] = deconv(u, v)} - dzielenie wielomianu \texttt{u} przez \texttt{v}
+    \item \texttt{d = det(M)} - zwraca wyznacznik macierzy
+    \item \texttt{r = rank(M)} - zwraca rząd macierzy
+    \item \texttt{r = roots(p)} - zwraca pierwiastki wielomianu danego współczynnikami z wektora \texttt{p}
+    \item \texttt{p = poly(r)} - zwraca współczynniki wielomianu o pierwiastkach zawartych w \texttt{r}
+    \item \texttt{y = polyval(p, x)} - zwraca wartość wielomianu danego współczynnikami w wektorze \texttt{p} dla argumentu \texttt{x}.
+    Jeśli jako \texttt{x} zostanie podany wektor, to funkcja zwróci wektor wartości dla odpowiednich argumetnów.
+    \item \texttt{x = polyint(p, k)} - całkuje wielomian dany wektorem \texttt{p} ze stałą całkowania \texttt{k} (domyślnie $0$, \texttt{k} opcjonalne).
+    Wartość zwracana jest jako wektor współczynników.
+    \item \texttt{d = polyder(p)} - zwraca pochodną wielomianu danego współczynnikami \texttt{p}
+    \item \texttt{d = polyder(p, b)} - zwraca pochodną iloczynu wielomianów \texttt{p} i \texttt{b}
+    \item \texttt{sums = cumsum(X)} - zwraca wektor kumulatywnych sum 
+    \item \texttt{S = std(A)} - zwraca odchylenie standardowe danych w wektorze \texttt{A}
+    \item \texttt{M = mean(A)} - zwraca średnią danych w wektorze \texttt{A}
+    \item \texttt{p = randperm(n)} - zwraca wektor z losową permutacją liczb całkowitych od 1 do \texttt{n}
+\end{itemize}
