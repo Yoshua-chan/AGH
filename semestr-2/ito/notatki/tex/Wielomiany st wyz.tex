@@ -18,6 +18,9 @@ Cardano mają następującą postać:
     D = q^2 + p^3
 \end{equation*}
 
+Jeśli $D > 0$, to $y_1 \in \mathbb{R} \land y_2, y_3 \in \mathbb{C} \setminus \mathbb{R}$.\\
+Stosujemy następującą metodę:
+
 \begin{equation*}
     u = \sqrt[3]{- q + \sqrt{D}}\ \ \ 
     v = \sqrt[3]{- q - \sqrt{D}}
@@ -28,8 +31,44 @@ Cardano mają następującą postać:
     \pm j \cdot \frac{\sqrt{3}}{2}\left(u-v\right)
 \end{equation*}
 
+Jeśli $D < 0$, czyli $p < 0$, to wszystkie miejsca zerowe $y_k$ są rzeczywiste i różne.\\
+Liczymy je w następujący sposób:
+
+\begin{equation*}
+    y_k = 2 \sqrt{-p} \cdot \cos{\left(\frac{\varphi + 2\pi\left(k-1\right)}
+    {3}\right)}
+\end{equation*}
+
+gdzie
+$$ 
+\varphi \in \left<0; \pi\right>,\ \cos{\varphi} = \frac{-q}{\sqrt{-p^3}}
+$$\\
+
+Ostatecznie podstawiamy z powrotem pod $x$:
+
 \begin{equation*}
     x = y - \frac{a_2}{3}
 \end{equation*}
 
+
 \subsection*{Wzory Ferrari}
+
+Dany jest wielomian o wzorze $x^4 + a_3x^3 + a_2x^2 + a_1x = a_0$.
+
+\begin{enumerate}
+    \item Podstawiamy pod wielomian 3 stopnia według wzoru
+    \begin{equation*}
+        k^3 + \left(-\frac{a_2}{2}\right)\cdot k^2 +
+        \left(\frac{a_3 a_1 - 4a_0}{4}\right)\cdot k +
+        \frac{4a_2a_0 - a_3^2 a_0 - a_1^2}{8} = 0
+    \end{equation*}
+    \item Liczymy dowolny pierwiastek powyższego wielomianu i oznaczamy jako $k$. Następnie podstawiamy według wzorów:
+    \begin{equation*}
+        p = \sqrt{2k + \frac{a_3^2}{4} - a_2},\ \ q = \frac{k\cdot a_3 - a_1}{2p}
+    \end{equation*}
+    \item Podstawiamy do równania:
+    \begin{equation*}
+        x^2 + \left(\frac{a_3}{2} \pm p\right)\cdot x + k \pm q = 0
+    \end{equation*}
+    \item Następnie rozwiązujemy dwa równania i mamy pierwiastki
+\end{enumerate}
